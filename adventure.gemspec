@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
-require_relative "lib/tage/version"
+require_relative "lib/adventure/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "tage"
-  spec.version = Tage::VERSION
+  spec.name = "adventure"
+  spec.version = Adventure::VERSION
   spec.authors = ["Graham Lewis"]
   spec.email = ["grahamcharleslewis@gmail.com"]
 
-  spec.summary = "Text Adventure Game Engine (TAGE)"
-  spec.description = "Text Adventure Game Engine (TAGE)"
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "A text adventure game engine"
+  spec.description = "A text adventure game engine"
+  spec.homepage = "https://example.com"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  spec.metadata["allowed_push_host"] = "https://example.com"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/grahamcharleslewis/tage"
-  spec.metadata["changelog_uri"] = "https://github.com/grahamcharleslewis/tage/blob/main/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/grahamcharleslewis/adventure"
+  spec.metadata["changelog_uri"] = "https://github.com/grahamcharleslewis/adventure/blob/main/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

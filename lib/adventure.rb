@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative "tage/version"
+require_relative "adventure/version"
 
-module Tage
+module Adventure
   class Error < StandardError; end
   # Your code goes here...
 end
