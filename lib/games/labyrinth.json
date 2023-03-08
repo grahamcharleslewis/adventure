@@ -1,0 +1,217 @@
+{
+  "name": "Labyrinth",
+  "description": "Avoid the Minotaur's and escape the fiendish maze.",
+  "entrances": [
+    [
+      "2",
+      "0"
+    ]
+  ],
+  "nodes": {
+    "0": {
+      "3": {
+        "type": "standard",
+        "damage": 0,
+        "description": "Nothing!\nThere's nothing here.\nPerhaps you were imagining things.\nOr maybe you werenâ€™t?",
+        "linked_nodes": [
+          [
+            "1",
+            "3"
+          ],
+          [
+            "0",
+            "4"
+          ]
+        ]
+      },
+      "4": {
+        "type": "standard",
+        "damage": 100,
+        "description": "A Minotaur.\nIt deftly removes your head with a single blow of a massive double-headed axe.\nIt takes your head to its lair deep in the centre of the maze, adding it to the large pile of heads it has collected already.\nThere it waits until the next unfortunate person tempts fate by entering the maze.",
+        "linked_nodes": [
+          [
+            "1",
+            "4"
+          ],
+          [
+            "0",
+            "3"
+          ]
+        ]
+      }
+    },
+    "1": {
+      "1": {
+        "type": "standard",
+        "damage": 100,
+        "description": "A Minotaur.\nBefore you can do anything, the Minotaur tears into your flesh with its teeth and claws!\nYou feel fear and pain, as your blood drains from your body.\nEverything goes black...",
+        "linked_nodes": [
+          [
+            "2",
+            "1"
+          ]
+        ]
+      },
+      "3": {
+        "type": "standard",
+        "damage": 0,
+        "description": "It's darker and damper here.\nEven with the torch, you can barely see anything.\nA movement! Yes, definitely a movement.\nYou ready yourself for combat then...",
+        "linked_nodes": [
+          [
+            "1",
+            "4"
+          ],
+          [
+            "2",
+            "3"
+          ],
+          [
+            "0",
+            "3"
+          ]
+        ]
+      },
+      "4": {
+        "type": "standard",
+        "damage": 0,
+        "description": "Ok, itâ€™s just your nerves getting the better of you.\nA pack of black rats run over your sandaled feet.\nA large black rat, with red eyes and long yellow teeth stops to stare at you before it nips your toe.\nYou kick it away with a shudder.",
+        "linked_nodes": [
+          [
+            "1",
+            "3"
+          ],
+          [
+            "0",
+            "4"
+          ]
+        ]
+      }
+    },
+    "2": {
+      "0": {
+        "type": "entrance",
+        "damage": 0,
+        "description": "You find yourself in a damp, dark, stone walled hole in the ground.\nRats scurry around your feet.\nThe stench of Minotaur hangs heavy in the air.\nA torch is fixed to the wall to your right. You take it from it's housing.\nThe torch helps you see better, but casts eerie shadows across the walls.\nYou would swear some of the shadows are really moving!",
+        "linked_nodes": [
+          [
+            "2",
+            "1"
+          ]
+        ]
+      },
+      "1": {
+        "type": "standard",
+        "damage": 0,
+        "description": "What was that!!!\nYou hear something in the dark, but can't tell which direction it came from.\nYou move the torch around in all directions.\nYou see nothing.\nBut, wait! There it is again. A metallic sound, like a piece of metal being scraped along a damp, slimy wall.\nYou feel uneasy. The hairs on the back of your neck prickle and your heart begins to race.\nIt could be the dark heightening your senses, or is the stench of Minotaur really getting stronger?",
+        "linked_nodes": [
+          [
+            "2",
+            "0"
+          ],
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ],
+          [
+            "3",
+            "1"
+          ]
+        ]
+      },
+      "2": {
+        "type": "standard",
+        "damage": 0,
+        "description": "You have a feeling you are being watched.\nBut by whom - or what, and from where?\nIn the shadows, you think you can hear someone or something moving.\nYou wave the torch in that direction.\nNothing!\nAre you being hunted?",
+        "linked_nodes": [
+          [
+            "2",
+            "1"
+          ],
+          [
+            "2",
+            "3"
+          ]
+        ]
+      },
+      "3": {
+        "type": "standard",
+        "damage": 0,
+        "description": "You feel almost calm, and - yes, the air seems sweeter here.\nOr is that just your imagination playing tricks on you?",
+        "linked_nodes": [
+          [
+            "2",
+            "2"
+          ],
+          [
+            "1",
+            "3"
+          ],
+          [
+            "3",
+            "3"
+          ]
+        ]
+      }
+    },
+    "3": {
+      "1": {
+        "type": "standard",
+        "damage": 0,
+        "description": "You feel very uneasy.\nThe foetid stench of Minotaur is almost overwhelming.\nYour mind screams 'Get out! Get out now!!!'\nYou run...",
+        "linked_nodes": [
+          [
+            "2",
+            "1"
+          ],
+          [
+            "4",
+            "1"
+          ]
+        ]
+      },
+      "3": {
+        "type": "standard",
+        "damage": 0,
+        "description": "Is that a ray of light you can see?\nWhich direction should you go? Quickly you decide and then proceed cautiously.",
+        "linked_nodes": [
+          [
+            "2",
+            "3"
+          ],
+          [
+            "4",
+            "3"
+          ]
+        ]
+      }
+    },
+    "4": {
+      "1": {
+        "type": "standard",
+        "damage": 0,
+        "description": "Straight into a Minotaur.\nIt could be the adrenaline fuelled fear or just sheer luck, but you lash out and keep hitting the Minotaur until it stops moving.\nYou are injured but alive.\nThe Minotaur is laying on the ground, you can see it's chest rise and fall in jerky shallow movements.\nYou decide not to hang around. You run away from the Minotaur, faster than youâ€™ve ever run in your life!",
+        "linked_nodes": [
+          [
+            "3",
+            "1"
+          ]
+        ]
+      },
+      "3": {
+        "type": "exit",
+        "damage": 0,
+        "description": "Congratulations!\nYou made it out alive and live to tell the tale!",
+        "linked_nodes": [
+          [
+            "3",
+            "3"
+          ]
+        ]
+      }
+    }
+  }
+}
